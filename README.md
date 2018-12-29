@@ -34,7 +34,11 @@ Step2: 编写一个实际有用的ML应用
 Basics：
 
 |名称|类型|目标变量类型|要点|
-|---|---|---|---|---|
+|----|----|----|----|----|
+|1|2|3|4|
+
+|名称|类型|目标变量类型|要点|
+|----|----|----|----|----|
 |[Linear Regression (线性回归)](Linear-Regression.md)| 监督 | 回归 ||
 |[Logistic Regression (逻辑回归)](Logistic-Regression.md) | 监督 | 分类 |当需要将特征映射为非线性而得到复杂的hypothesis function时，特征数目将指数式增长，此时使用该方法不实际|
 |[Neural Network (神经网络)](Neural-Network.md) | 监督 | 分类|有复杂hypothesis function和许多特征的问题 |
