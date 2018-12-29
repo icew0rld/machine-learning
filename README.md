@@ -15,16 +15,16 @@ Step2: 编写一个实际有用的ML应用
 
 - Introduction
 	- 什么是机器学习
-	- 什么是Supervised Learning(监督学习)
-	- 什么是Unsupervised Learning(无监督学习)
+	- 什么是监督学习
+	- 什么是无监督学习
 
 - 前置数学知识
-	- Linear Algebra(线性代数)：用的最多，但都只是基本的矩阵运算
-	- 概率论：高斯分布
+	- 线性代数：用的最多，但都只是基本的矩阵运算
 	- 微积分：导数、偏导数
+	- 概率论：高斯分布
 
 - 机器学习领域常用编程语言
-	- Octave/Matlab：高级，建原型
+	- Octave/Matlab：高层，建原型
 	- Python：AI常用，大概是最流行？
 	- R:?
 	- Java/C++：需要性能时，结合库
@@ -33,15 +33,15 @@ Step2: 编写一个实际有用的ML应用
 
 Basics：
 
-|名称|类型|目标变量类型|要点|
-|---|---|---|---|
-|[Linear Regression (线性回归)](Linear-Regression.md)| 监督 | 回归 ||
-|[Logistic Regression (逻辑回归)](Logistic-Regression.md) | 监督 | 分类 |当需要将特征映射为非线性而得到复杂的hypothesis function时，特征数目将指数式增长，此时使用该方法不实际|
-|[Neural Network (神经网络)](Neural-Network.md) | 监督 | 分类|有复杂hypothesis function和许多特征的问题 |
-|[Support Vector Machine (支持向量机)](Support-Vector-Machine.md)| 监督 | 分类|powerful 'black box' learning algorithm, and by posing a cleverly-chosen optimization objective|
-|[Collaborative Filtering (协同过滤)](https://www.coursera.org/learn/machine-learning/resources/szFCa)| 监督| 回归 |是线性回归的一种变形，用在推荐系统中 |
-|[K-Means Clustering (K-均值聚类算法)](K-Means-Clustering.md)|无监督| 聚类(clustering)|从数据集中找出K个聚类
-|[Anomoly Detection (异常检测)](https://www.coursera.org/learn/machine-learning/resources/szFCa) |无监督| - | 检测异常数据，易理解，使用高斯分布
+|名称|类型|子类型|要点|详情|
+|---|---|---|---|---|
+|Linear Regression| 监督 | 回归 ||[Detail](Linear-Regression.md)|
+|Logistic Regression | 监督 | 分类 |当需要将特征映射为非线性而得到复杂的hypothesis function时，特征数目将指数式增长，此时使用该方法不实际|[Detail](Logistic-Regression.md)|
+|Neural Network | 监督 | 分类|有复杂hypothesis function和许多特征的问题 | [Detail](Neural-Network.md)|
+|Support Vector Machine| 监督 | 分类|powerful 'black box' learning algorithm, and by posing a cleverly-chosen optimization objective|[Detail](Support-Vector-Machine.md) |
+|Collaborative Filtering| 监督| 回归 |是线性回归的一种变形，用在推荐系统中 |[Detail](https://www.coursera.org/learn/machine-learning/resources/szFCa)|
+|K-Means Clustering|无监督| 聚类|从数据集中找出K个聚类 |[Detail](K-Means-Clustering.md)|
+|Anomoly Detection|无监督| 非聚类 | 检测异常数据，易理解，使用高斯分布|[Detail](https://www.coursera.org/learn/machine-learning/resources/szFCa) |
 
 More：
 
@@ -56,22 +56,22 @@ More：
 |FP-growth算法|无监督||
 |AdaBoost元算法|?|
 
-- Cross Algorithm Techniques (不同算法有可能都会采用的技术）
- 	- 数据可视化
-	- Feature Mapping (特征映射)
-	- Norm
+- Cross Algorithm Techniques: 不同算法有可能都会采用的技术
+ 	- Visualization: 数据可视化
+ 	- Vectorization：矢量化
+	- Feature Mapping: 特征映射
+	- Normalization: 规范化
 		- Featurn scaling
-		- Mean Norm
-	- Regulization
-	- [Dimentionality Reduction (降维)](Dimensionality-Reduction.md)
-	- 矢量化 Vectorization
+		- Mean Normalization
+	- Regularization: 正则化
+	- [Dimentionality Reduction](Dimensionality-Reduction.md): 降维
 	- [机器学习算法诊断](Diagnostic.md)：评估算法，给出改进建议
 	- [机器学习系统设计](System-Design.md)：关于如何设计机器学习系统的建议
-	- Pipeline
-		- ceiling analysis
-	- artificial data synthesis
+	- Pipeline: 多个组件串联构成机器学习整体
+		- Ceiling analysis: 天花板分析，分析改进哪个组件可以最大化整个系统的提升
+	- Artificial Data Synthesis: 人工数据合成
 
-- Big Data (Large Scale Machine Learning)
+- Big Data
 	- Stochastic/Mini-Batch Gradient Descent
 	- MapReduce
 
@@ -125,8 +125,10 @@ Octave是一个软件，是一种采用高级编程语言的主要用于数值�
 安装（mac）：
 
 - [下载](https://wiki.octave.org/Octave_for_macOS)
-- 双击
-- 把octave可执行二进制文件添加到PATH
+- 命令行运行:
+```
+export PATH=$PATH:/Applications/Octave-4.4.0.app/Contents/Resources/usr/bin
+```
 
 ## Linear Algebra(线性代数)
 
@@ -146,17 +148,27 @@ Octave是一个软件，是一种采用高级编程语言的主要用于数值�
 
 ## Useful Resources
 
-[机器学习,coursera课程,Ng](https://zh.coursera.org/learn/machine-learning)
+课程：
 
-[机器学习实战,书,Peter]
+- [Ng斯坦福在coursera课程的公开课《机器学习》](https://zh.coursera.org/learn/machine-learning)
 
-[Octave doc](http://www.gnu.org/software/octave/doc/interpreter/)
+书：
 
-[Matlab doc](https://www.mathworks.com/help/)
+- [《机器学习实战》 by Peter](https://www.amazon.cn/dp/B00D747PTK/ref=sr_1_1?ie=UTF8&qid=1546095191&sr=8-1&keywords=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98)
 
-[MATLAB Programming Tutorials](https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources)
+在线教程：
 
-[Userful Resources os 机器学习,coursera课程,Ng](https://www.coursera.org/learn/machine-learning/resources/NrY2G)
+- [MATLAB Programming Tutorials](https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources)
+
+在线帮助文档：
+
+- [Octave doc](http://www.gnu.org/software/octave/doc/interpreter/)
+
+- [Matlab doc](https://www.mathworks.com/help/)
+
+其他有用资源：
+
+- [Userful Resources os 机器学习,coursera课程,Ng](https://www.coursera.org/learn/machine-learning/resources/NrY2G)
 
 ### 学术
 
