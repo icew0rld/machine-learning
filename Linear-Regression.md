@@ -2,6 +2,8 @@
 
 $$a + b$$
 
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+
 分类：
 
 - With One Variable
