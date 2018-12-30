@@ -1,5 +1,7 @@
 # Linear Regression
 
+$$a + b$$
+
 分类：
 
 - With One Variable
