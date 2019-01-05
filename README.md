@@ -1,13 +1,13 @@
 # Machine Learning
 
-## 学习指南
+## 打怪升级指南
 
 Step1: 学习吴恩达在Coursera开设的课程《机器学习》，掌握如下部分知识: **(约需要50小时)**
 
 - 掌握7个机器学习算法，能够用Octave语言编程实现这些算法
 - 掌握并会应用常用的在不同算法中都可能使用的技术
 - 了解大数据情况下应用机器学习所需要的技术
-- 了解应用例子：推荐系统和Photo ORC
+- 了解应用例子：推荐系统和Photo ORC（识别图像中的字符）
 
 Step2: 了解尽可能多（？）的算法，了解的程度只需知道每个算法的适用范围
 
@@ -17,18 +17,18 @@ Step4: 学习深度学习
 
 ## 知识大纲
 
-- Introduction
+- [Introduction](Introduction.md)
 	- 什么是机器学习
 	- 什么是监督学习
 	- 什么是无监督学习
 
 - 前置数学知识
-	- 线性代数：用的最多，但都只是基本的矩阵运算
+	- [线性代数](Linear-Algebra.md)：用的最多，但都只是基本的矩阵运算
 	- 微积分：导数、偏导数
 	- 概率论：高斯分布
 
 - 机器学习领域常用编程语言
-	- Octave/Matlab：高层，建原型
+	- [Octave](Octave.md) or Matlab：高层，建原型
 	- Python：AI常用，大概是最流行？
 	- R:?
 	- Scala:?
@@ -87,69 +87,12 @@ More：
 	- Photo ORC
 
 - Useful Resources
-
-## Introduction
-
-什么是机器学习：
-
-- computer program
-- without being explicitly programmed
-- to task T, meatured by P, learn from E
-
-什么是Supervised Learning(监督学习)：
-
-- 有right answer，即一个input对应的output是确定的，这个output值也叫作label
-- 监督学习算法所解决的问题可分为：
-	- Regression(回归)：输出值是连续的
-	- Classification(分类)：输出值是离散的
-
-什么是Unsupervised Learning(无监督学习):
-
-- 数据no labels，不知道结果是什么样的。即(X, y)只有X没有y。
-- 非监督学习算法所解决的问题包括：
-	- Clustering(聚类)
-	- Non-clustering(非聚类)
-- 无监督学习，是要找到数据中的结构，其中一种结构是cluster,要找cluster的算法就叫Clustering。比如social network analysis,要找出属于相同cluster的人群。
-- 所谓监督，就是有目标变量值y，在训练模型参数时，提供『监督』。
-- 无监督学习再概念上似乎比较高级，但其算法的难度不一定比监督学习高，比如K-means clustering算法，就能比较直观地理解。
-
-## Octave
-
-音乐里的『八度』也是这个单词。
-
-Octave是一个软件，是一种采用高级编程语言的主要用于数值分析的软件。它和Matlab大部分语法兼容，但Matlab是专有软件，Octave是开源软件。两者相比，Matlab使用更『流畅』一些。和Python、R相比，语言抽象级别较高(未证实)。适合用来写机器学习算法的原型。
-
-- Basic operations
-- Moving data around
-- Computing on data
-- Ploting data
-- Control statements
-- Functions
-- Vertorization
-
-安装（mac）：
-
-- [下载](https://wiki.octave.org/Octave_for_macOS)
-- 命令行运行:
-```
-export PATH=$PATH:/Applications/Octave-4.4.0.app/Contents/Resources/usr/bin
-```
-
-## Linear Algebra (线性代数)
-
-线性代数涉及矩阵和矩阵运算，其中的部分知识在机器学习中被用到。
-
-- Matrix
-- Vector
-- Addition
-- Scalar Multiplication
-- Matrix-Vector Multiplication
-- Matrix-Matrix Multiplication
-- Matrix Multiplication Properties
-	- Not commutative. A∗B≠B∗A
-	- Associative. (A∗B)∗C=A∗(B∗C)
-- Inverse
-- Transpose
+- 其他
+	- 开源框架：caffe, ncnn, tensorflow，mxnet
+	- 实现相关：
+		- linux操作系统
+		- gpu平台cuda，opencl
+		- neon or simd指令
 
 ## Useful Resources
 
