@@ -42,6 +42,6 @@ hypothesis function h maps poorly to the trend of the data.
 
 对于线性回归和逻辑回归，通过在代价函数中添加：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 15.04.57.png)
+![](屏幕快照 2019-01-06 15.04.57.png)
 
 以实行Regularization。

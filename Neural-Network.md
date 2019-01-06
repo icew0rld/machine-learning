@@ -27,7 +27,7 @@
   - 有几层
   - 每层多少个单元
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 17.38.53.png)
+![](屏幕快照 2019-01-06 17.38.53.png)
 
 a(j+1) = g(bigTheta(j) * a(j)) ，bigTheta是一个s_j+1 * (1 + s_j)的矩阵。
 
@@ -52,7 +52,7 @@ end
 
 ## Cost Function
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 17.56.02.png)
+![](屏幕快照 2019-01-06 17.56.02.png)
 
 - k是输出层单元数
 
@@ -133,11 +133,11 @@ end
 
 Back Propagation用来计算Cost Function的对于bitTheta的偏导数:
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 19.51.41.png)
+![](屏幕快照 2019-01-06 19.51.41.png)
 
 计算过程：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 19.59.53.png)
+![](屏幕快照 2019-01-06 19.59.53.png)
 
 代码示例见上一节。
 
@@ -222,7 +222,7 @@ end
 
 检查偏导是否计算正确
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 20.11.49.png)
+![](屏幕快照 2019-01-06 20.11.49.png)
 
 ```matlab
 % 求近似偏导

@@ -17,11 +17,11 @@ standard deviation
 
 测量一组数值的离散程度
 
-![sd](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.27.36.png)
+![sd](屏幕快照 2019-01-06 13.27.36.png)
 
 样本的标准差:
 
-![sd](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.33.14.png)
+![sd](屏幕快照 2019-01-06 13.33.14.png)
 
 ```matlab
 sigma = std(X);%除的是n-1，对X的列进行计算
@@ -35,7 +35,7 @@ sigma = std(X);%除的是n-1，对X的列进行计算
 
 ## 两者都应用
 
-![fn](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.41.54.png)
+![fn](屏幕快照 2019-01-06 13.41.54.png)
 
 ```matlab
 function [X_norm, mu, sigma] = featureNormalize(X)

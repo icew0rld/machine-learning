@@ -4,7 +4,7 @@
 
 线性回归的假说函数，是一个线性函数，如下：
 
-![hTheta](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.08.19.png)
+![hTheta](屏幕快照 2019-01-06 12.08.19.png)
 
 ```matlab
 h = theta' * x;
@@ -12,11 +12,11 @@ h = theta' * x;
 
 
 
-![X](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.09.56.png)
+![X](屏幕快照 2019-01-06 12.09.56.png)
 
 
 
-![hX](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.10.21.png)
+![hX](屏幕快照 2019-01-06 12.10.21.png)
 
 ```matlab
 h = X * theta;
@@ -26,7 +26,7 @@ h = X * theta;
 
 代价函数是计算假说函数求出的值和实际值之间的误差的总和：
 
-![jTheta](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.43.44.png)
+![jTheta](屏幕快照 2019-01-06 12.43.44.png)
 
 ```matlab
 function J = computeCostMulti(X, y, theta)
@@ -47,9 +47,9 @@ end
 
 ## Gradient Descent
 
-![theta](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.47.04.png)
+![theta](屏幕快照 2019-01-06 12.47.04.png)
 
-![theta](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.47.21.png)
+![theta](屏幕快照 2019-01-06 12.47.21.png)
 
 ```matlab
 function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters)
@@ -75,7 +75,7 @@ grad = 1 / m * X' * (X * theta - y) + lambda / m * [0;theta(2:end)];
 
 代价函数对theta求偏导，最小值是偏导等于0时的theta，因而可以直接计算theta，而不用梯度下降。
 
-![nf](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.55.10.png)
+![nf](屏幕快照 2019-01-06 12.55.10.png)
 
 ```matlab
 function [theta] = normalEqn(X, y)
@@ -86,7 +86,7 @@ end
 
 正则化：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 16.13.44.png)
+![](屏幕快照 2019-01-06 16.13.44.png)
 
 ```matlab
 function [theta] = normalEqn(X, y, lambda)
@@ -100,13 +100,13 @@ end
 
 ## 解法的选择
 
-![choose](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 12.57.11.png)
+![choose](屏幕快照 2019-01-06 12.57.11.png)
 
 ## Polynomial Regression
 
 对线性回归进行特指映射，算法就变成多项式回归。
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.01.14.png)
+![](屏幕快照 2019-01-06 14.01.14.png)
 
 [Feature Mapping](Feature-Mapping.md)
 

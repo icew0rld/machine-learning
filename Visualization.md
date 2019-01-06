@@ -2,7 +2,7 @@
 
 ## plot
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.48.45.png)
+![](屏幕快照 2019-01-06 13.48.45.png)
 
 ```matlab
 function plotData(x, y)
@@ -15,7 +15,7 @@ end
 
 
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.47.57.png)
+![](屏幕快照 2019-01-06 13.47.57.png)
 
 ```matlab
 plot(x, y, '-');%-画线
@@ -23,7 +23,7 @@ plot(x, y, '-');%-画线
 
 ## surf
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.49.02.png)
+![](屏幕快照 2019-01-06 13.49.02.png)
 
 ```matlab
 surf(x, y, Z);
@@ -33,7 +33,7 @@ surf(x, y, Z);
 
 ## contour
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 13.49.07.png)
+![](屏幕快照 2019-01-06 13.49.07.png)
 
 ```matlab
 contour(x, y, Z);

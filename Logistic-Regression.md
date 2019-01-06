@@ -10,9 +10,9 @@ Logistic得名于Sinmoid Function也叫Logistic Function。Logistic Function得�
 
 一个值落在0和1之间的函数
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.49.47.png)
+![](屏幕快照 2019-01-06 14.49.47.png)
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.49.51.png)
+![](屏幕快照 2019-01-06 14.49.51.png)
 
 ```matlab
 function g = sigmoid(z)
@@ -26,7 +26,7 @@ end
 
 为了用于分类，把线性回归的值，用sigmoid函数映射到0-1
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.51.04.png)
+![](屏幕快照 2019-01-06 14.51.04.png)
 
 ```matlab
 h = sigmoid(theta' * x);
@@ -34,7 +34,7 @@ h = sigmoid(theta' * x);
 
 
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.51.17.png)
+![](屏幕快照 2019-01-06 14.51.17.png)
 
 ![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.54.05.png)
 
@@ -54,15 +54,15 @@ The **decision boundary** is the line that separates the area where y = 0 and wh
 
 非矢量化：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.57.48.png)
+![](屏幕快照 2019-01-06 14.57.48.png)
 
 矢量化：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.54.49.png)
+![](屏幕快照 2019-01-06 14.54.49.png)
 
 非矢量化，正则化：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.58.49.png)
+![](屏幕快照 2019-01-06 14.58.49.png)
 
 为什么代价函数长这样？1）预测值越接近实际值，代价越小。2）使偏导能和线性回归一样（地简洁）
 
@@ -70,11 +70,11 @@ The **decision boundary** is the line that separates the area where y = 0 and wh
 
 矢量化：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.56.01.png)
+![](屏幕快照 2019-01-06 14.56.01.png)
 
 非矢量化，正则化：
 
-![](/Users/acer/project/machine-learning/屏幕快照 2019-01-06 14.58.59.png)
+![](屏幕快照 2019-01-06 14.58.59.png)
 
 代价函数和梯度下降(正则化)：
 
