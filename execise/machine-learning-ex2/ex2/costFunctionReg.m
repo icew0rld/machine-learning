@@ -22,10 +22,10 @@ h = sigmoid(X * theta);
 J = 1 / m * (-y' * log(h) - (1 - y)' * log(1 - h))...
     + lambda / (2 * m) * (theta(2:end)' * theta(2:end));
 
-thetaWithFirstZero = theta;
-thetaWithFirstZero(1) = 0;
-grad = 1 / m * X' * (h - y) + lambda / m * thetaWithFirstZero;
-
+% thetaWithFirstZero = theta;
+% thetaWithFirstZero(1) = 0;
+% grad = 1 / m * X' * (h - y) + lambda / m * thetaWithFirstZero;
+grad = 1 / m * X' * (h - y) + lambda / m * [0;theta(2:end)];
 
 % =============================================================
 

@@ -40,7 +40,7 @@ Step1需掌握的算法：
 
 |名称|类型|子类型|要点|详情|
 |---|---|---|---|---|
-|Linear Regression| 监督 | 回归 ||[Detail](Linear-Regression.md)|
+|Linear Regression| 监督 | 回归 |假说函数不局限于线性，经过特征映射后，可以是多项式或其它复杂函数|[Detail](Linear-Regression.md)|
 |Logistic Regression | 监督 | 分类 |当需要将特征映射为非线性而得到复杂的hypothesis function时，特征数目将指数式增长，此时使用该方法不实际|[Detail](Logistic-Regression.md)|
 |Neural Network | 监督 | 分类|有复杂hypothesis function和许多特征的问题 | [Detail](Neural-Network.md)|
 |Support Vector Machine| 监督 | 分类|powerful 'black box' learning algorithm, and by posing a cleverly-chosen optimization objective|[Detail](Support-Vector-Machine.md) |
@@ -62,37 +62,34 @@ More：
 |AdaBoost元算法|?|
 
 - Cross Algorithm Techniques: 不同算法有可能都会采用的技术
- 	- Visualization: 数据可视化
- 	- Vectorization：矢量化
-	- Feature Mapping: 特征映射
-	- Normalization: 规范化
-		- Featurn scaling
-		- Mean Normalization
-	- Regularization: 正则化
-	- [Dimentionality Reduction](Dimensionality-Reduction.md): 降维
-	- [机器学习算法诊断](Diagnostic.md)：评估算法，给出改进建议
-	- [机器学习系统设计](System-Design.md)：关于如何设计机器学习系统的建议
-	- Pipeline: 多个组件串联构成机器学习整体
-		- Ceiling analysis: 天花板分析，分析改进哪个组件可以最大化整个系统的提升
-	- Artificial Data Synthesis: 人工数据合成
+
+| 技术                      | 含义                                                         | 详情                                  |
+| ------------------------- | ------------------------------------------------------------ | ------------------------------------- |
+| Visualization             | 数据可视化                                                   | [detail](Visualization.md)            |
+| Vectorization             | 将计算公式矢量化                                             |                                       |
+| Feature Normalization     | 特征规范化                                                   | [detail](Feature-Normalization.md)    |
+| Feature Mapping           | 特征映射                                                     | [detail](Feature-Mapping.md)          |
+| Regularization            | 正则化                                                       |                                       |
+| Dimentionality Reduction  | 降维                                                         | [detail](Dimensionality-Reduction.md) |
+| 机器学习算法诊断          | 评估算法，给出改进建议                                       | [detail](Diagnostic.md)               |
+| 机器学习系统设计          | 关于如何设计机器学习系统的建议                               | [detail](System-Design.md)            |
+| Pipeline                  | 多个组件串联构成机器学习整体。Ceiling analysis: 天花板分析，分析改进哪个组件可以最大化整个系统的提升 |                                       |
+| Artificial Data Synthesis | 人工数据构造                                                 |                                       |
 
 - Big Data
-	- Stochastic/Mini-Batch Gradient Descent
-	- MapReduce
-
+  - Stochastic/Mini-Batch Gradient Descent
+  - MapReduce
 - Application Cases
-	- 推荐系统
-		- 基于内容的推荐
-		- 协同过滤
-	- Photo ORC
-
-- Useful Resources
+  - 推荐系统
+  	- 基于内容的推荐
+  	- 协同过滤
+  - Photo ORC
 - 其他
-	- 开源框架：caffe, ncnn, tensorflow，mxnet
-	- 实现相关：
-		- linux操作系统
-		- gpu平台cuda，opencl
-		- neon or simd指令
+  - 开源框架：caffe, ncnn, tensorflow，mxnet
+  - 实现相关：
+  	- linux操作系统
+  	- gpu平台cuda，opencl
+  	- neon or simd指令
 
 ## Useful Resources
 
@@ -103,6 +100,8 @@ More：
 书：
 
 - [《机器学习实战》 by Peter](https://www.amazon.cn/dp/B00D747PTK/ref=sr_1_1?ie=UTF8&qid=1546095191&sr=8-1&keywords=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98)
+- 《机器学习》周志华
+- 《统计学习方法》李航
 
 在线教程：
 
@@ -117,9 +116,9 @@ More：
 
 - [Userful Resources os 机器学习,coursera课程,Ng](https://www.coursera.org/learn/machine-learning/resources/NrY2G)
 
-### 学术
+学术:
 
-cvpr,国际计算机视觉与模式识别会议
+- cvpr,国际计算机视觉与模式识别会议
 
 ## Todo
 
