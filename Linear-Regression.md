@@ -37,6 +37,8 @@ end
 
 正则化：
 
+![](屏幕快照 2019-01-06 20.56.39.png)
+
 ```matlab
 function J = computeCostMultiReg(X, y, theta, lambda)
 	m = length(y); 
@@ -64,6 +66,8 @@ end
 ```
 
 正则化：
+
+![](屏幕快照 2019-01-06 20.57.10.png)
 
 ```matlab
 grad = 1 / m * X' * (X * theta - y) + lambda / m * [0;theta(2:end)];

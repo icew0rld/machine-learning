@@ -20,19 +20,19 @@
 以上，若发现有bias或variance，可改变degree、lambda、m，以使算法的误差变小。即，可改变的变量有：
 
 - degree
-	- 增大：Fixes high bias
-	- 减少：Fixes high variance
+  - 增大：Fixes high bias
+  - 减少：Fixes high variance
 - lambda
-	- 增大：Fixes high variance
-	- 减少：Fixes high bias
+  - 增大：Fixes high variance
+  - 减少：Fixes high bias
 - m
-	- 增大：Fixes high variance
+  - 增大：Fixes high variance
 - size of feature set
-	- 增大：Fixes high bias
-	- 减少：Fixes high variance
+  - 增大：Fixes high bias
+  - 减少：Fixes high variance
 - number of unit or layer in nerual network
-	- 增大：Fixes high bias
-	- 减少：Fixes high variance
+  - 增大：Fixes high bias
+  - 减少：Fixes high variance
 
 ## Details
 

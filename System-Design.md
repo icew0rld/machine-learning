@@ -10,11 +10,17 @@ The recommended approach to solving machine learning problems is:
 
 ## Error Metrics for Skewed Classes
 
-Precision 
+Precision  and Recall
 
-Recall
+![](屏幕快照 2019-01-06 20.53.03.png)
 
 F Score 
+
+![](屏幕快照 2019-01-06 20.53.48.png)
+
+Accuracy
+
+![](屏幕快照 2019-01-06 20.54.34.png)
 
 ## Data
 

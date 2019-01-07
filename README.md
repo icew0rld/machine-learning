@@ -44,13 +44,13 @@ Step1需掌握的算法：
 |Logistic Regression | 监督 | 分类 |当需要将特征映射为非线性而得到复杂的hypothesis function时，特征数目将指数式增长，此时使用该方法不实际|[Detail](Logistic-Regression.md)|
 |Neural Network | 监督 | 分类|有复杂hypothesis function和许多特征的问题 | [Detail](Neural-Network.md)|
 |Support Vector Machine| 监督 | 分类|powerful 'black box' learning algorithm, and by posing a cleverly-chosen optimization objective|[Detail](Support-Vector-Machine.md) |
-|Collaborative Filtering| 监督| 回归 |是线性回归的一种变形，用在推荐系统中 |[Detail](https://www.coursera.org/learn/machine-learning/resources/szFCa)|
 |K-Means Clustering|无监督| 聚类|从数据集中找出K个聚类 |[Detail](K-Means-Clustering.md)|
-|Anomoly Detection|无监督| 非聚类 | 检测异常数据，易理解，使用高斯分布|[Detail](https://www.coursera.org/learn/machine-learning/resources/szFCa) |
+|Anomoly Detection|无监督| 非聚类 | 检测异常数据，易理解，使用高斯分布|[Detail](Anomaly-Detection.md) |
+|Collaborative Filtering|监督| 回归 | 是线性回归的一种变形，用在推荐系统中 |[Detail](Recommender-System.md) |
 
 More：
 
-|名称|类型|目标变量类型|要点|
+|名称|类型|子类型|要点|
 |---|---|---|---|
 |k-邻近算法| 监督 | 分类||
 |决策树| 监督 | 分类||
@@ -58,8 +58,8 @@ More：
 |k-邻近算法| 监督 | 分类||
 |预测数值型数据：回归 same?|监督 | 回归||
 |树回归 is Linear?|监督 | 回归||
-|FP-growth算法|无监督||
-|AdaBoost元算法|?|
+|FP-growth算法|无监督|||
+|AdaBoost元算法|?|||
 
 - Cross Algorithm Techniques: 不同算法有可能都会采用的技术
 
@@ -80,10 +80,8 @@ More：
   - Stochastic/Mini-Batch Gradient Descent
   - MapReduce
 - Application Cases
-  - 推荐系统
-  	- 基于内容的推荐
-  	- 协同过滤
-  - Photo ORC
+  - [推荐系统](Recommender-System.md)
+  - [Photo ORC](Photo-ORC.md)
 - 其他
   - 开源框架：caffe, ncnn, tensorflow，mxnet
   - 实现相关：
@@ -99,7 +97,7 @@ More：
 
 书：
 
-- [《机器学习实战》 by Peter](https://www.amazon.cn/dp/B00D747PTK/ref=sr_1_1?ie=UTF8&qid=1546095191&sr=8-1&keywords=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98)
+- [《机器学习实战》Peter](https://www.amazon.cn/dp/B00D747PTK/ref=sr_1_1?ie=UTF8&qid=1546095191&sr=8-1&keywords=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98)
 - 《机器学习》周志华
 - 《统计学习方法》李航
 
